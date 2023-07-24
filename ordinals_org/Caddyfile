@@ -1,0 +1,5 @@
+*.inscribingamsterdam.com, inscribingamsterdam.com {
+	root * /var/www/inscribingamsterdam
+	file_server
+	log
+}
