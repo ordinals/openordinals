@@ -7,9 +7,9 @@ touch ~/.hushlogin
 sed -i -E 's/#?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 
 mkdir -p \
-  /etc/systemd/system/inscribingamsterdam.service.d 
+  /etc/systemd/system/openordinals.service.d 
 
-hostnamectl set-hostname inscribingamsterdam.com
+hostnamectl set-hostname ordinals.org
 
 apt-get install --yes \
   acl \
@@ -18,6 +18,7 @@ apt-get install --yes \
   libssl-dev \
   pkg-config \
   ufw \
+  caddy \
   vim
 
 ufw default allow outgoing
@@ -30,11 +31,12 @@ ufw allow ssh
 
 ufw --force enable
 
-mkdir -p /var/lib/inscribingamsterdam
+mkdir -p /var/lib/openordinals
+mkdir -p /var/www/openordinals 
 
-id --user inscribingamsterdam || useradd --system inscribingamsterdam
+id --user openordinals || useradd --system openordinals
 
-cp deploy/inscribingamsterdam.service /etc/systemd/system/
+cp deploy/openordinals.service /etc/systemd/system/
 systemctl daemon-reload
-systemctl enable inscribingamsterdam
-systemctl restart inscribingamsterdam
+systemctl enable openordinals
+systemctl restart openordinals
