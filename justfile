@@ -1,17 +1,18 @@
 set positional-arguments
 
 deploy:
-  ssh root@inscribingamsterdam "mkdir -p deploy \
-    && mkdir -p /var/lib/inscribingamsterdam \
+  ssh root@ordinals.org "mkdir -p deploy \
     && apt-get update --yes \
     && apt-get upgrade --yes \
     && apt-get install --yes git rsync"
-  scp Caddyfile index.html banner.jpeg root@inscribingamsterdam:/var/lib/inscribingamsterdam
-  rsync -avz deploy/* root@inscribingamsterdam:deploy/
-  ssh root@inscribingamsterdam './deploy/setup'
+  rsync -avz deploy/* root@ordinals.org:deploy/
+  ssh root@ordinals.org 'chmod 777 ./deploy/setup'
+  ssh root@ordinals.org './deploy/setup'
+  rsync -avz site/Caddyfile root@ordinals.org:/var/lib/openordinals/
+  rsync -avz --exclude='Caddyfile' site/* root@ordinals.org:/var/www/openordinals/
 
 log:
-  ssh root@inscribingamsterdam 'journalctl -fu inscribingamsterdam'
+  ssh root@ordinals.org 'journalctl -fu openordinals'
 
 test: 
-  python3 -m http.server
+  python3 -m http.server -d site
