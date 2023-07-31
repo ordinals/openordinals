@@ -15,4 +15,5 @@ log:
   ssh root@ordinals.org 'journalctl -fu openordinals'
 
 test: 
+  open http://localhost:8000
   python3 -m http.server -d site
