@@ -16,9 +16,9 @@ novel technology.
 
 There are numerous ways you can assist in achieving this mission. You can:
 
-[Donate](#donate) to the Open Ordinals Institute
-[Contribute](https://github.com/ordinals/ord) to the Ordinals protocol
-[Spread](https://twitter.com/ordinalsorg) the word about the Open Ordinals
+- [Donate](#donate) to the Open Ordinals Institute
+- [Contribute](https://github.com/ordinals/ord) to the Ordinals protocol
+- [Spread](https://twitter.com/ordinalsorg) the word about the Open Ordinals
 initiative
 
 Every little support counts. We appreciate your commitment to our cause. Thank
