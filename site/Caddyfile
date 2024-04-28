@@ -1,5 +1,0 @@
-ordinals.org {
-	root * /var/www/openordinals
-	file_server
-	log
-}
