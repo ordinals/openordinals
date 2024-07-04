@@ -2,9 +2,10 @@
 
 ## About 
 
-The Open Ordinals Institute is a 501(c)(3) public charity dedicated to nurturing
-and upholding a thriving ecosystem for the free and open-source development of
-the Bitcoin Ordinals protocol. We are staunch believers in the essential role of
+The Open Ordinals Institute, a California nonprofit corporation in the process
+of applying for 501(c)(3) status, is a public charity dedicated to nurturing and
+upholding a thriving ecosystem for the free and open-source development of the
+Bitcoin Ordinals protocol. We are staunch believers in the essential role of
 free and open-source software for the future of the internet and the world.
 
 The Open Ordinals Institute is committed to supporting developers involved in
