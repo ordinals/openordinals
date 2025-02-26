@@ -48,10 +48,10 @@ For RUNES you can make a donation here:
 bc1qqnvs04uxjrvjjkh4ahzpkqlkggj29ptkjas3navgawzagtjvvg8s8dcpnr
 
 All addresses are in a 2-of-4 multisig wallet with keys held by
-[raphjaph](https://twitter.com/raphjaph),
-[erin](https://twitter.com/realizingerin),
+[raphjaph](https://x.com/raphjaph),
+[realizingerin](https://x.com/realizingerin),
 [rodarmor](https://twitter.com/rodarmor), and
-[ordinally](https://twitter.com/veryordinally).
+[veryordinally](https://x.com/veryordinally).
 
 Donations received will go towards funding maintenance and development of ord,
 as well as hosting costs for [ordinals.com](https://ordinals.com) and
